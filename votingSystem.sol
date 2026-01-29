@@ -7,6 +7,7 @@ contract votingSystem{
         string name;
         uint256 voteCount;
     }
+    mapping (address => bool) public hasVoted;
     Candidate[] public candidates;
 
     //add candidate
