@@ -15,4 +15,12 @@ contract votingSystem{
         candidates.push(Candidate(_name, 0));
     }
 
+    //vote function
+    function vote(uint256 _candidateIndex) public {
+        require(!hasVoted[msg.sender], "You have already voted");
+
+        candidates[_candidateIndex].voteCount += 1;
+        hasVoted[msg.sender] = true;
+    }
+
 }
