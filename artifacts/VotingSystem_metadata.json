@@ -160,6 +160,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "leadingCandidate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -271,11 +284,11 @@
 			]
 		},
 		"votingSystem.sol": {
-			"keccak256": "0x627c9b55d509530354dc566e13f7e9d220c8c25c08f629a97bd11b88c8b30232",
+			"keccak256": "0x696d9518a59c0e4eb9bdfa02d16a1f2467e85308d2b03e7442b4532d68311669",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3959e4ea9597cc32d9b6b881322d1f9691b374ac5563c8c8a837f51fd6a3ec41",
-				"dweb:/ipfs/QmYncP76iyoGTTZSFQBo3Uemy4eCC2VTk4CQ5Usronih7E"
+				"bzz-raw://1da7aa20116b9759d530f07bd27043ceedc090dabe910a59924035f10b2cfc05",
+				"dweb:/ipfs/QmWERUnnDsdK2kFhR47SeanCvP7xSsatHoGAx6PHU5tntu"
 			]
 		}
 	},

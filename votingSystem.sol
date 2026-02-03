@@ -35,4 +35,18 @@ contract VotingSystem is Ownable {
     function getCandidateCount() public view returns (uint256) {
         return candidates.length;
     }
-}
+
+    function leadingCandidate() public view returns (uint256) {
+        uint256 maxVotes = 0;
+        uint256 leadingIndex = 0;
+
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (candidates[i].voteCount > maxVotes) {
+                maxVotes = candidates[i].voteCount;
+                leadingIndex = i;
+            }
+        }
+
+        return leadingIndex;
+    }
+    }
